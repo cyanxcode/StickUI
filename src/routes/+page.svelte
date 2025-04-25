@@ -4,6 +4,8 @@
 	import { Badge } from "$lib/stickui/ui/Badge";
 	import { Drawer, openDrawer } from "$lib/stickui/ui/Drawer";
 	import Input from "$lib/stickui/ui/Input/Input.svelte";
+	import { toggleSheet } from "$lib/stickui/ui/Sheet";
+	import Sheet from "$lib/stickui/ui/Sheet/Sheet.svelte";
 	import Skeleton from "$lib/stickui/ui/Skeleton/Skeleton.svelte";
 	import { Switch } from "$lib/stickui/ui/Switch";
 	import { toggleTheme } from "$lib/stores/theme";
@@ -14,6 +16,9 @@
     <Switch />
     <Button func={toggleTheme}>
         Hello World!
+    </Button>
+    <Button func={toggleSheet}>
+        Menu
     </Button>
     <Button func={() => openDrawer()} >
         Open
@@ -52,6 +57,7 @@
         </AccordianItem>
     </Accordian>
 
+    <Sheet>Hello</Sheet>
     <Skeleton extraClass="w-full h-10" />
 </main>
     <Drawer>Hello World</Drawer>
