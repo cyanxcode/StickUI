@@ -1,0 +1,1 @@
+export {default as TextLimit} from './TextLimit.svelte';

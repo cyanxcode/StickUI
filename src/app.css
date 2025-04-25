@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: oklch(98.5% 0 0); 
+  --color-foreground: oklch(14.1% 0.005 285.823);
+  --color-primary: oklch(21% 0.006 285.885);   
+  --color-primary-foreground: oklch(96.7% 0.001 286.375); 
+
+  --color-secondary: oklch(92% 0.004 286.32);
+  --color-secondary-foreground: oklch(27.4% 0.006 286.033);
+
+  --color-muted: oklch(87.2% 0.01 258.338);     
+  --color-muted-foreground: oklch(37% 0.013 285.805);
+
+  --color-border: oklch(37% 0.013 285.805);   
+  --color-danger: oklch(60.6% 0.26 26.4);   
+  --color-success: oklch(73.3% 0.23 148); 
+
+  /* Dark Theme */
+  --color-background-dark: oklch(14.1% 0.005 285.823);
+  --color-foreground-dark: oklch(98.5% 0 0); 
+  --color-primary-dark: oklch(96.7% 0.001 286.375);
+  --color-primary-foreground-dark: oklch(21% 0.006 285.885); 
+
+  --color-secondary-dark: oklch(27.4% 0.006 286.033);   
+  --color-secondary-foreground-dark: oklch(92% 0.004 286.32); 
+
+  --color-muted-dark: oklch(37% 0.013 285.805);          
+  --color-muted-foreground-dark: oklch(87.1% 0.006 286.286); 
+
+  --color-border-dark: oklch(37% 0.013 285.805);
+  --color-danger-dark: oklch(70.5% 0.2 28);         
+  --color-success-dark: oklch(85% 0.16 147);       
+
+  }
